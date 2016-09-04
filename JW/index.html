@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/first_style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.useso.com/css?family=Poiret+One|Lily+Script+One|Raleway:400,300,500,600,200,700' rel='stylesheet' type='text/css'>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easydropdown.js"></script>
+<script src="js/jquery-2.1.4"></script>
+<script src="js/jquery.gridAccordion.min.js"></script>
+</head>
+<body>
+<div class="sy-bg" id="home"> <!-- 背景图片 --> 
+	<div class="container">
+		<div class="header">
+			<div class="sy-logo">     <!--字体标志-->
+				<a href="index.html" >
+				    <h1><img src="images/first_logo.png">Room</h1>
+				    <span>Go Beyond One self<span>
+				</a>
+			</div>
+			<div class="sy-top-nav">	<!--导航条-->
+				<ul class="nav">
+					<li>
+					    <a class="active" href="index.html" target="_blank">首页</a>
+					</li>
+					<li>
+					    <a href="member.html" target="_blank">成员</a>
+					</li>
+					<li>
+					    <a href="product.html" target="_blank">作品</a>
+					</li> 
+					<li>
+					    <a href="jwroom.html" target="_blank">经纬工作室</a>
+					</li>   
+					<li>
+					    <a href="contact.html" target="_blank">学习库</a>
+					</li>
+				</ul>
+			</div>
+		</div>       
+        <!-- 文字轮播 -->
+		<div id="top" class="callbacks_container">
+			<ul class="rslides" id="slider4">
+				<li>
+					<div class="banner-info">
+						<h3>We Are Young</h3>
+						<lable> </lable>
+						<p>Young is the only thing we have right to weave a dream time.</p>
+						<p>年轻是我们唯一拥有权利去编织梦想的时光</p>
+					</div>
+				</li>
+				<li>
+					<div class="banner-info">
+						<h3>We Are Strong</h3>
+						<lable> </lable>
+						<p>Do not , for one repulse , give up the purpose that you resolved to effect .</p>
+						<p>不要只因一次失败，就放弃</p>
+					</div>
+				</li>
+				<li>
+					<div class="banner-info">
+						<h3>I Want To</h3>
+						<lable> </lable>
+						<p>May I be strenuous, energetic and persevering !May I be patient! May I be able to bear and forbear the wrongs of others! May I ever keep a promise given!</p>
+						<p>
+						愿我努力精进，勤奋不懈；愿我有耐心能容忍并宽恕别人的过错，愿我能信守自己立下的诺言。
+						</p>
+					</div>								
+				</li>
+			</ul>
+		</div>
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+				$(function () {
+					// Slideshow 4
+					$("#slider4").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: true,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						  $('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						  $('.events').append("<li>after event fired.</li>");
+						}
+				    });
+				});
+		</script>
+	</div>
+</div>
+<!-- 成员作品工作室学习库四个圆圈导航 -->
+<div class="banner-bottom-section">
+	<div class="container">
+		<div class="banner-bottom-info">
+		    <a href="member.html" target="_blank">
+			<div class="col-md-3 b-grids">
+				<i class="s1"> </i>
+				<div class="album-box">
+				    <h4>成员</h4>
+				    <p>
+				        一滴水只有放进大海里才永远不会干涸，一个人只有当他把自己和集体事业融合在一起的时候才能最有力量。
+				    </p>
+				</div>
+			</div>
+			</a>
+			<a href="" target="_blank">
+			<div class="col-md-3 b-grids">
+			    <i class="s2"> </i>
+			    <div class="album-box">
+				    <h4>作品</h4>
+				    <p>
+				        无数个日日夜夜的编写，一次次的尝试调整，把无聊的代码赋予了美的意义，展示出我们对美的追求
+				    </p>
+				</div>
+			</div>
+			</a>
+			<a href="jwroom.html" target="_blank">
+			<div class="col-md-3 b-grids">
+			    <i class="s3"> </i>
+			    <div class="album-box">
+				    <h4>J W工作室</h4>
+				    <p>
+				        这里生活着为未来打拼的年轻人，我们相聚在一起，相互陪伴相互学习，愿我们彼此寻找到属于自己的一片天地
+				    </p>
+				</div>
+			</div>
+			</a>
+			<a href="" target="_blank">
+			<div class="col-md-3 b-grids lost">
+			    <i class="s4"> </i>
+			    <div class="album-box">
+				   <h4>学习库</h4>
+				    <p>
+				        不再害怕迷茫，无助，历届学长学姐已经为你照亮了前方的路，在这里去寻找一个专属于你自己的学习方法
+				    </p>
+				</div>
+			</div>
+			</a>
+		</div>
+    </div>
+</div>
+<div class="about">         <!-- JW工作室介绍 -->
+	<div class="container">
+		<h3 class="tittle">J W ROOM</h3>
+		<lable class="two"> </lable>
+		<h3 class="sub-text">J W 工作室欢迎你的加入</h3>
+		<p>
+		    经纬工作室创建于2004年，专注于网站建设的研发与学习，负责北华大学各学院和部门网站的开发、更新于维护工作。工作室开设网站前端、PHP后端开发、Net后端开发三个学习方向。工作室成员可以根据自身情况选择适合自己的学习方向，已进入业界的各方向的学长会及时回馈各个方向业界最新的动态信息，以保证工作室的培训内容能够满足市场需求，最大化的利用在校的学习时间。自工作室成立至今，经纬工作室的发展得到了校领导的广泛认可，完成了北华大学计算机科学与技术学院、北华大学人事处、吉林市朝鲜族群众艺术馆的网站的开发维护工作，在基地领导及工作室负责老师的带领下，一届又一届的“经纬人”本着顽强拼搏。努力创新的“经纬精神”走向祖国大江南北的各个工作岗位。
+		</p>
+		<a href="jwroom.html" class="more" target="_blank"> MORE</a>
+	</div>
+</div>
+<div class="hair-section">      <!--SHOW TIME  开始 -->
+	<div class="container">
+		<h3 class="tittle">SHOW TIME </h3>
+		<lable class="two"> </lable>
+		<h3 class="sub-text">专属于你的Show Time</h3>
+	    <div class="grid">
+			<div class="col-md-4 h-f">
+			    <figure class="effect-jazz">
+				    <img src="images/product1.png" alt="img25"/>
+					<figcaption>
+						<h2>hair <span>Style</span></h2>
+						<p>
+						    When Jazz starts to chase cars, the whole world stands still.
+						</p>
+					    <a href="#">View more</a>
+					</figcaption>			
+				</figure>
+				<div class="hf-text">
+				    <h5>Long Silky</h5>
+				    <p>Hair Style</p>
+				</div>
+			</div>
+			<div class="col-md-4 h-f">
+				<figure class="effect-jazz">
+					<img src="images/product2.png" alt="img25"/>
+					<figcaption>
+						<h2>hair <span>Style</span></h2>
+						<p>
+						    When Jazz starts to chase cars, the whole world stands still.
+						</p>
+						<a href="#">View more</a>
+					</figcaption>			
+				</figure>
+				<div class="hf-text">
+				    <h5>Fishtail</h5>
+				    <p>Hair Style</p>
+				</div>
+			</div>
+			<div class="col-md-4 h-f">
+				<figure class="effect-jazz">
+					<img src="images/product3.png" alt="img25"/>
+					<figcaption>
+						<h2>hair <span>Style</span></h2>
+						<p>
+						    When Jazz starts to chase cars, the whole world stands still.
+						</p>
+						<a href="#">View more</a>
+					</figcaption>			
+				</figure>
+				<div class="hf-text">
+				    <h5>French Twisted</h5>
+				    <p>Hair Style</p>
+				</div>
+		    </div>
+		</div>
+		<a href="product.html" class="more" target="_blank"> MORE</a>
+    </div>
+
+</div>
+
+<div class="news-section">   <!-- JW  工作室成员 -->
+	<div class="container">
+		<h3 class="tittle">WE ARE FAMILY</h3>
+		<lable class="two"> </lable>
+		<h3 class="sub-text">JW 工作室因为有你们才精彩</h3>
+		<div class="news-left">			
+			<div class="col-md-6 col-news-right">
+				<div class="col-bottom">
+					<h4>负责老师 </h4>
+					<p>
+					    李红果，男，副教授。1992年毕业北京大学力学系，理学士，2007年毕业于北京大学软件与微电子学院，主笔和参编《国家职业资格培训教程－计算机网络管理员》丛书。主要讲授网络工程专业导论、网络基础、网络互联技术、网络操作系统与应用服务管理等专业课。 
+					</p>
+					<a href="#" class="more" target="_blank"> MORE</a>
+				</div>
+				<div class="col-bottom">
+					<h4>团队精英</h4>
+					<p>
+					    <p>
+					        10级潘宝石学长，现就职于正非（北京）智能技术有限公司，同时还是公司联合创始人，精通 python、web前端等技术。
+					        工作经历：北京撼树科技有限公司、北京撼树科技有限公司、正非（北京）智能技术有限公司.
+					    </p>
+					    <p>
+					        11级马莹学长，php开发工程师 ，熟练使用html、css、js、jquery等前端技术，以及Linux服务器管理，redis、memcache缓存等。
+					        工作经历：豆果美食app菜谱相关接口开发、印象博观网络科技北京有限公司、够够乐科技有限公司。</p>
+
+					    <p>
+					        12级王迪学长,net开发工程师，现居北京工作，精通.Net MVC4.0，熟练掌握web api 2 、javascript 、c# 、SQl 等。工作经历：北京德盟阳光软件有限公司  、北京万维捷通软件有限公司 
+					    </p>
+					</p>
+					<a href="member.html" class="more" target="_blank"> MORE</a>
+				</div>
+				<div class="col-bottom">
+					<h4>团队成员</h4>
+					<p>
+					    J W 工作室现由14级赵修宇学长带领工作室成员，学习相关网页制作等技术，网页前端和后端精确的成员分配，组成有着顽强拼劲，团结互助，精益求精的团队。
+					</p>
+					<a href="#" class="more" target="_blank"> MORE</a>
+				</div>
+			</div>
+			<!-- hover   效果 -->
+			<div class="col-md-6 col-news">
+			    <script type="text/javascript">
+                    $(function($) {
+	                    $('.accordion').gridAccordion({
+	                        width: 600,
+	                        height: 600,
+	                        columns: 3,
+	                        distance: 2,
+	                        closedPanelWidth: 80,
+	                        closedPanelHeight:80,
+	                        alignType: 'centerCenter',
+	                        slideshow: true,
+	                    });
+                    });
+                </script>
+			    <ul class="accordion" style="margin: 0 auto;">
+	                <li> 
+	                    <a href="member.html" target="_blank"> <img src="images/teacher.jpg" alt=""></a>
+	                </li>
+	                <li> 
+	                    <a href="member.html" target="_blank"> <img src="images/member1.jpg" alt=""></a> 
+	                </li>
+	                <li> 
+	                    <a href="member.html"> <img src="images/member2.jpg" alt=""></a> 
+	                </li>
+	                <li> 
+	                    <a href="member.html"> <img src="images/member3.jpg" alt=""></a> 
+	                </li>
+	                <li> 
+	                    <a href="member.html"> <img src="images/member4.jpg" alt=""></a> 
+	                </li>
+	                <li> 
+	                    <a href="member.html"> <img src="images/member5.jpg" alt=""></a>
+	                </li>
+	                <li> 
+	                    <a href="member.html"> <img src="images/member6.jpg" alt=""></a> 
+	                </li>
+	                <li> 
+	                    <a href="member.html"> <img src="images/member7.jpg" alt=""></a>
+	                </li>
+	                <li> 
+	                    <a href="member.html"> <img src="images/mumber8.jpg" alt=""></a> 
+	                </li>
+                </ul>  			
+			</div>
+		</div>
+	</div>
+</div>
+<div class="newsletter">   <!-- STUDYING   学习库连接 -->
+	<div class="container">
+		<h3 class="tittle two">STUDYING</h3>
+		<lable class="two"> </lable>
+		<div class="newslatter">
+			<span style="color: white">
+				学习库中拥有网站前端开发，PHP后端开发、Net开发等学习资料,帮助你解决在网站行业的难题困扰。
+			</span>
+		</div>
+		<a href="#" class="more" target="_blank"> MORE</a>
+	</div>
+
+<div class="footer-section">
+	<div class="container">
+		<div class="footer-grids wow bounceIn animated" data-wow-delay="0.4s">
+		<a href="jwroom.html" target="_blank">
+			<div class="col-md-3 footer-grid">
+				<h4>JW ROOM</h4>
+				<div class="border2"></div>
+				<p>
+				    经纬工作室创建于2004年，专注于网站建设的研发与学习，负责北华大学各学院和部门网站的开发、更新于维护工作。
+				</p>
+		        <p class="sub">
+		            自工作室成立至今，经纬工作室的发展得到了校领导的广泛认可，完成了北华大学计算机科学与技术学院、北华大学人事处、吉林市朝鲜族群众艺术馆的网站的开发维护工作。
+		        </p>
+		    </div>
+		    </a>
+		    <a href="" target="_blank">
+			<div class="col-md-3 footer-grid tags">
+				<h4>STUDYING</h4>
+				<div class="border2"></div>
+				<ul class="tag">
+					<li><a href="#">HTML/HTML5</a></li>
+					<li><a href="#">CSS</a></li>
+					<li><a href="#">JavaScript</a></li>
+					<li><a href="#">PHP</a></li>
+				    <li><a href="#">JAVA</a></li>
+					<li><a href="#">photoshop</a></li>
+					<li><a href="#">jQuery</a></li>
+					<li><a href="#">WebApp</a></li>
+					<li><a href="#">.Net</a></li>
+					<li><a href="#">Python</a></li>
+					<li><a href="#">数据结构</a></li>
+				</ul>
+			</div>
+			</a>
+			<a href="index.html" target="_blank">
+			<div class="col-md-3 footer-grid tweet">
+				<h4>ABOUT Us</h4>
+				<div class="border2"></div>
+				<div class="icon-3-square">
+					<a href="#"><i class="square-3"></i></a>
+				</div>
+				<div class="icon-text">
+					<p>
+						<a href="http://csc.beihua.edu.cn/" target="_blank">http://csc.beihua.edu.cn/</a>
+					    <p>北华大学计算机科学技术学院</p>
+					</p>
+					<h5>北华欢迎你的加入</h5>
+				</div>
+				<div class="icon-3-square">
+					<a href="#" target="_blank"><i class="square-3"></i></a>
+				</div>
+				<div class="icon-text">
+					<p>
+						<a href="http://www.beihua.edu.cn/" target="_blank">http://csc.beihua.edu.cn/</a>
+						<p>北华大学官网</p>
+					</p>
+					<h5>北华欢迎你的加入</h5>
+				</div>
+			</div>
+			</a>
+			<a href="member.html" target="_blank">
+			<div class="col-md-3 footer-grid flickr">
+				<h4>WE ARE FAMILY</h4>
+				<div class="border2"></div>
+				<div class="flickr-grids">
+					<div class="flickr-grid">
+					    <a href="member.html"><img src="images/mumber9.jpg" alt=" " title="team" /></a>
+					</div>
+					<div class="flickr-grid">
+						<a href="member.html"><img src="images/mumber10.jpg" alt=" " title="team" /></a>
+					</div>
+					<div class="flickr-grid">
+						<a href="member.html"><img src="images/mumber11.jpg" alt=" " title="team" /></a>
+					</div>
+					<div class="flickr-grid">
+						<a href="member.html"><img src="images/mumber12.jpg" alt=" " title="team" /></a>
+					</div>
+					<div class="flickr-grid">
+						<a href="member.html"><img src="images/mumber13.jpg" alt=" " title="team" /></a>
+					</div>
+					<div class="flickr-grid">
+						<a href="member.html"><img src="images/mumber14.jpg" alt=" " title="team" /></a>
+					</div>
+					<div class="flickr-grid">
+						<a href="member.html"><img src="images/mumber15.jpg" alt=" " title="team" /></a>
+					</div>
+					<div class="flickr-grid">
+						<a href="member.html"><img src="images/mumber16.jpg" alt=" " title="team" /></a>
+					</div>
+					<div class="flickr-grid">
+						<a href="member.html"><img src="images/mumber17.jpg" alt=" " title="team" /></a>
+					</div>
+				</div>
+			</div>
+			</a>
+	    </div>
+	</div>
+</div>
+</div>
+<div class="copyright">
+	<p>地址：吉林省吉林市新山街一号    
+	联系方式：13894055929    经纬邮箱：www.787956151@qq.com
+	</p>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+		    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!--start-smoth-scrolling-->
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		    var defaults = {
+				containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+		    };
+		*/				  			
+		$().UItoTop({ easingType: 'easeOutQuart' });
+	});
+</script>
+<!-- 置顶 -->
+<a href="#home" id="toTop" class="scroll" style="display: block;">
+    <span id="toTopHover" style="opacity: 1;"></span>
+</a>
+</body>
+</html>

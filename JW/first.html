@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<link rel="stylesheet" href="css/jquery.multiscroll.css">
+<style>
+* { margin: 0; padding: 0;}
+body { font-size: 100%;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%;}
+
+
+
+.dowebok-Wrap { -webkit-transition:opacity 1s; -moz-transition:opacity 1s; -o-transition:opacity 1s; transition: opacity 1s;}
+
+.ms-section { font-family: "Microsoft Yahei"; color: #fff;}
+.ms-section { background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+.ms-section10 { background-color: #000;}
+
+.ms-left .ms-section1 { background-image: url(images/l1.jpg);}
+.ms-left .ms-section2 { background-image: url(images/l2.jpg);}
+.ms-left .ms-section3 { background-color: #000;}
+.ms-left .ms-section4 { background-image: url(images/l4.jpg);}
+.ms-left .ms-section4.down { background-image: url(images/l4-2.jpg);}
+.ms-left .ms-section5 { background-image: url(images/l5.jpg);}
+.ms-left .ms-section6 { background-image: url(images/l6.jpg);}
+.ms-left .ms-section7 { background-image: url(images/l7.jpg);}
+.ms-left .ms-section8 { background-color: #000;}
+.ms-left .ms-section9 { background-image: url(images/l9.jpg);}
+
+.ms-right .ms-section1 { background-image: url(images/l11.jpg);}
+.ms-right .ms-section2 { background-image: url(images/r2.jpg);}
+.ms-right .ms-section3 { background-image: url(images/r3.jpg);}
+.ms-right .ms-section3.turnOn { background-image: url(images/r3-2.jpg);}
+.ms-right .ms-section4 { background-color: #000;}
+.ms-right .ms-section5 { background-image: url(images/r5.jpg);}
+.ms-right .ms-section6 { background-image: url(images/r6.jpg);}
+.ms-right .ms-section7 { background-color: #000;}
+.ms-right .ms-section8 { background-image: url(images/r8.jpg);}
+.ms-right .ms-section9 { background-image: url(images/r9.jpg);}
+
+.ms-left .ms-section1 h1 strong { line-height: 1.1em; font-size: 5em; text-transform: uppercase; text-shadow: -2px 2px 0 #a6acae;}
+.ms-left .ms-section1 h1 span { display: block;}
+.ms-section1 .txt { position: relative; left: -100%; top: 15%; opacity: 0; transition-duration: 0.5s;}
+.green-box { display: inline-block; margin-top: 30px; padding: 6px 10px; line-height: 1.2em; font-size: 2.5em; background: url(images/bg-greenbox.png) 0 0 repeat; *display: inline; zoom: 1;}
+
+.button { display: inline-block; margin-top: 30px; padding: 7px 73px 7px 25px; font-size: 1.5em; color: #fff; text-decoration: none; background: url(images/button.gif) right;}
+.button2 { padding: 7px 25px 7px 60px; background: url(images/button-left.gif) 0 no-repeat;}
+
+.ms-section .txt2 { position: relative; top: 20%; padding: 0 15%;}
+.ms-section .txt2 h2 { margin-bottom: 30px; font-size: 4em; line-height: 1.1em; text-shadow: -2px 2px 0 #a6acae; text-transform: uppercase;}
+.ms-section .txt2 h2 span { display: block;}
+.ms-section .txt2 h3 { margin: 20px 0; font-size: 2em;}
+.ms-section .txt2 p { font-size: 1.5em;}
+
+.ms-section2 .txt2 { position: absolute; left: 0; top: 75%; width: 100%; padding: 0; text-align: center;}
+.ms-left .txt2 { left: -100%; transition-duration: 0.5s;}
+.ms-right .txt2 { left: 100%; transition-duration: 0.5s;}
+
+.active .txt2 { left: 0; transition-delay: 1s;}
+.active .txt { left: 20%; opacity: 1; transition-delay: 1s;}
+
+#loading123 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #fff url(images/loading.gif) 50% no-repeat;}
+</style>
+</head>
+
+<body>
+<div class="dowebok-Wrap">
+	<div class="ms-left">
+		<div class="ms-section ms-section1">
+			<div class="txt">
+				<h1><strong>创新基地 <span>经纬</span></strong></h1>
+				<p class="green-box">让自己创造世界！</p>
+			</div>
+		</div>
+		<div class="ms-section ms-section2">
+			<div class="txt2">
+				<h2>Insist</h2>
+				<p>成功的秘诀是走向目的的坚持。 —— 狄斯雷利</p>
+			</div>
+		</div>
+		<div class="ms-section ms-section3">
+			<div class="txt2">
+				<h2>software<span>fanatics</span>
+				<span>devotion to beauty</span></h2>
+				<h3>优秀的软件需要</h3>
+				<p>开发者对美有着近乎狂热的追求</p>
+				
+			</div>
+		</div>
+		<div class="ms-section ms-section4">
+		</div>
+		<div class="ms-section ms-section5">
+			<div class="txt2">
+				<h2>SOFTWARE <span>CHANGE</span> <span>WORLD</span></h2>
+				<h3>在我们所处的时代</h3>
+				<p>软件已经改变了物理的世界</p>
+				
+			</div>
+		</div>
+		<div class="ms-section ms-section6">
+			<div class="txt2">
+				<h2>INTERENT<span>CHANCE</span> <span>TIMES</span></h2>
+				<h3>如果错过互联网</h3>
+				<p>与你擦肩而过的不仅是机会，而是整整一个时代。</p>
+			</div>
+
+		</div>
+		<div class="ms-section ms-section7"></div>
+		<div class="ms-section ms-section8">
+			<div class="txt2">
+				<h2>PLAN <span>STRIVE</span> <span>PREPARE</span></h2>
+				<h3>任何时候做任何事</h3>
+				<p>订最好的计划，尽最大的努力，作最坏的准备。</p>
+				
+			</div>
+		</div>
+		<div class="ms-section ms-section9">
+			<div class="txt2">
+				<h2>TEAM<span>INNOVATE</span> <span>DEAMAND</span></h2>
+				<h3>网站的开发</h3>
+				<p>需要的不仅是技术，更需要的是团队，是默契，是创新，是开辟新的世界，是客户的需求</p>
+				
+			</div>
+		</div>
+		<div class="ms-section ms-section10">
+			<div class="txt2">
+				<h2>JW<span>WELCOME</span> <span>YOU</span></h2>
+				<h3>JW工作室邀请你加入</h3>
+				<p>在这里你可自由的发挥，去展示，去创新，去努力，去拼搏</p>
+				<a class="button" href="index.html" target="_blank">点击进入</a>
+			</div>
+		</div>
+	</div>
+	<div class="ms-right">
+		<div class="ms-section ms-section1"></div>
+		<div class="ms-section ms-section2">
+			<div class="txt2">
+				<h2> Dream</h2>
+				<p>一切活动家都是梦想家。 —— 詹哈尼克</p>
+			</div>
+		</div>
+		<div class="ms-section ms-section3"></div>
+		<div class="ms-section ms-section4">
+			<div class="txt2">
+				<h2>INPROVING <span>MYSELF</span></h2>
+				<h3>不要贪多，做精做透很重要</h3>
+				<p>碰到一个强大的对手或者榜样的时候，你应该做的不是去挑战它，而是去弥补它</p>
+				
+			</div>
+		</div>
+		<div class="ms-section ms-section5"></div>
+		<div class="ms-section ms-section6"></div>
+		<div class="ms-section ms-section7">
+			<div class="txt2">
+				<h2>PROJECT <span>IDEA</span> <span>UNIQUE</span></h2>
+				<h3>一个项目</h3>
+				<p>一个想法如果不够独特的话，很难吸引别人。</p>
+				
+			</div>
+		</div>
+		<div class="ms-section ms-section8"></div>
+		<div class="ms-section ms-section9">
+			<div class="txt2">
+				<h2>CLIENT <span>DEMAND</span> <span>SUCCEED</span></h2>
+				<h3>必须先去了解市场和客户的需求</h3>
+				<p>然后再去找相关的技术解决方案，这样成功的可能性才会更大。</p>
+				
+			</div>
+		</div>
+		<div class="ms-section ms-section10"></div>
+	</div>
+</div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.multiscroll.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok-Wrap').multiscroll({
+		verticalCentered: false
+	});
+
+	var $btn3l = $('.btn3l');
+	$btn3l.on('click', function(){
+		$('.ms-right').find('.ms-section3').toggleClass('turnOn');
+		var $thisTxt = $(this).html();
+		if($thisTxt == '开灯'){
+			$(this).html('关灯');
+		} else {
+			$(this).html('开灯');
+		}
+		return false;
+	});
+
+	$('.btn42').on('click', function(){
+		$('.ms-left').find('.ms-section4').toggleClass('down');
+		var $thisTxt = $(this).html();
+		if($thisTxt == '放倒座位'){
+			$(this).html('竖起座位');
+		} else {
+			$(this).html('放倒座位');
+		}
+		return false;
+	});
+});
+
+//页面加载时的 Loading 效果
+$(window).load(function(){
+	window.setTimeout(function(){
+		$('body').removeClass('loading');
+	}, 2000);
+});
+</script>
+
+</body>
+</html>

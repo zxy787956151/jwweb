@@ -1,0 +1,665 @@
+body{
+	margin:0;
+	padding:0;
+	background:#fff;
+	  font-family: 'Raleway', sans-serif;
+ }
+body a{
+	text-decoration:none;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;			   
+}	
+p{
+	margin:0;
+}
+ul{
+margin:0;
+padding:0;
+}
+/*--字体标志   开始--*/
+.sy-logo {
+  float: left;
+}
+.sy-logo a{
+	display:block;
+}
+.sy-logo a h1 {
+  font-size:5em;
+  font-weight: 500;
+  color: #00b29f;
+font-family: 'Poiret One', cursive;
+}
+.sy-logo a span {
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.3em;
+  font-family: 'Poiret One', cursive;
+  text-align: left;
+  font-style: italic;
+  margin: 0 0em 0 1.5em;
+}
+/*字体标志   结束*/
+.sy-bg{                   /*背景图片*/
+	background:url(../images/first_banner.jpg) no-repeat;
+	background-size:cover;
+	-webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+	min-height: 900px;
+  min-width: 1349px;
+	position:relative;
+}
+.header{
+  margin-top:1.3em;
+}
+a.shop{
+	display:inline-block;
+	float:left;
+	margin:9px 0 0 30px;
+}
+/*导航条  开始*/
+a:hover{
+  color: #fff;
+  text-decoration:none;
+}
+.nav {
+  position: relative;
+  margin: 0px 0 0 0;
+}
+ul.nav{
+  padding:0;
+  list-style:none;
+}
+.nav > li {
+  display: inline-block;
+  float: left;
+  background: none; 
+}
+.nav li a{
+  color:white;
+}
+.nav li a.active, .nav li a:hover {
+  color:#00b29f!important;
+}
+.sy-top-nav {
+  float: right;
+  margin-top: 1.5em;
+  position: relative;
+}
+.nav > li > a > img {
+  max-width: none;
+  width: 73%;
+}
+.sy-top-nav{
+	float:right;
+	margin-top: 0px;
+}
+/*导航条*/
+/*文字轮播*/
+.banner-info {
+  margin-top:20%;
+
+}
+.banner-info lable{
+  width: 12%;
+  height: 10px;
+  background: #00b29f;
+  display: inline-block;
+}
+.banner-info h3 {
+ font-size: 4em;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Poiret One', cursive;
+}
+.banner-info p {
+ font-size: 1.1em;
+  font-weight: 400;
+  color: #fff;
+  margin: 0.5em 0 0;
+  width: 50%;
+  line-height: 1.8em;
+}
+#slider2,
+#slider3 {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 0 auto;
+}
+.callbacks_container {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.callbacks {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.callbacks li {
+  position: absolute;
+  width: 100%;
+}
+.callbacks img {
+  position: relative;
+  z-index: 1;
+  height: auto;
+  border: 0;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+}
+
+/*文字轮播按钮   开始*/ 
+.callbacks_tabs{
+  list-style: none;
+  position: absolute;
+  bottom: -9%;
+  z-index: 999;
+  left: -0.9%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.callbacks_tabs li{
+  display: inline-block;
+  margin: 0 .3em;
+}
+
+.callbacks_tabs a{
+ visibility: hidden;
+}
+.callbacks_tabs a:after {
+    content: "\f111";
+  font-size: 0;
+  font-family: FontAwesome;
+  visibility: visible;
+  display: block;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  background:#fff;
+  border:2px solid #fff;
+}
+.callbacks_here a:after{    
+  background:#fff;
+  border:2px solid #00b29f;
+}
+/*文字轮播按钮   结束*/ 
+/*文字轮播   结束*/
+/*四个圆圈导航   开始*/
+.banner-bottom-section {
+  padding: 4em 0;
+  background-color: #F6F6F6;
+}
+.b-grids {
+  border: 2px solid #8CD0B4;
+  padding: 3.5em 2em;
+  text-align: center;
+  width: 274px;
+  height: 274px;
+  margin-right: 1%;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+ }
+ .album-box h4{
+ font-size: 2.5em;
+  font-weight: 400;
+ color: #8CD0B4;
+  font-family: 'Poiret One', cursive;
+}
+ .album-box p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.7em;
+  margin: 0.5em 0 0 0;
+}
+.b-grids:hover{
+ border: 2px solid #00b29f;
+}
+.b-grids:hover .b-grids-box h5,.b-grids:hover .b-grids-box h4  {
+ color:#fff;
+}
+.banner-bottom-info {
+  padding: 4em 0 1em 0;
+}
+.b-grids.lost{
+  margin-right:0;
+}
+i.s1,i.s2,i.s3,i.s4 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -15%;
+  left: 35%;
+  background: #eee;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+i.s1 {
+    background: url('../images/user.png') no-repeat 20px 20px #8CD0B4;
+}
+i.s2{
+    background: url('../images/display.png') no-repeat 20px 20px #8CD0B4;
+}
+i.s3 {
+   background: url('../images/shop.png') no-repeat 20px 20px #8CD0B4;
+}
+i.s4 {
+   background: url('../images/study.png.') no-repeat 20px 20px #8CD0B4;
+}
+.b-grids:hover  i.s1 {
+    background: url('../images/user.png') no-repeat 20px 20px #00b29f;
+    -moz-transform: rotateY(360deg); 
+    -webkit-transform: rotateY(369deg);
+    transform: rotateY(360deg);
+}
+.b-grids:hover i.s2{
+    background: url('../images/display.png') no-repeat 20px 20px #00b29f;
+    -moz-transform: rotateY(360deg); 
+    -webkit-transform: rotateY(369deg);
+    transform: rotateY(360deg);}
+.b-grids:hover i.s3 {
+   background: url('../images/shop.png') no-repeat 20px 20px #00b29f;
+   -moz-transform: rotateY(360deg); 
+   -webkit-transform: rotateY(369deg);
+   transform: rotateY(360deg);}
+.b-grids:hover i.s4 {
+   background: url('../images/study.png') no-repeat 20px 20px #00b29f;
+   -moz-transform: rotateY(360deg); 
+   -webkit-transform: rotateY(369deg);
+   transform: rotateY(360deg);}
+/*四个圆圈导航   结束*/
+/*JW工作室介绍   开始*/
+.about {
+  padding:5em 0;
+}
+h3.tittle {
+  font-size: 3.5em;
+  font-weight: 400;
+  color: #00b29f;
+font-family: 'Poiret One', cursive;
+}
+lable.two{
+   width: 7%;
+  height: 6px;
+  background:#8CD0B4;
+  display: inline-block;
+}
+h3.sub-text {
+   margin: 0.5em 0 0 0;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.about p {
+   color: #555;
+  font-size: 1em;
+  line-height: 1.8em;
+  margin: 0.5em 0 0 0;
+  width: 70%;
+}
+/*JW工作室介绍  结束*/
+/*SHOP TIME 开始*/
+.hair-section {
+  padding: 4em 0;
+  background-color: #F6F6F6;
+}
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	  padding: 4em 0;
+}
+.hf-text {
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 1em;
+  }
+.hf-text h5 {
+  font-size:2em;
+  font-weight: 400;
+  color: #00b29f;
+font-family: 'Poiret One', cursive;
+  line-height:1.8em;
+}
+.hf-text p{
+  color:#8CD0B4;
+  text-transform: uppercase;
+  font-size: 1em;
+    font-weight: 600;
+}
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-errors: none;
+}
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.grid figure h2 span {
+	font-weight:500;
+	color:#fff;
+}
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+figure.effect-jazz {
+	background: -webkit-linear-gradient(-65deg, #01b4a5 0%,#00b29f 100%);
+	background: linear-gradient(-65deg, #01b4a5 0%,#00b29f 100%);
+}
+
+figure.effect-jazz img {
+	opacity: 0.9;
+}
+figure.effect-jazz figcaption::after,
+figure.effect-jazz img,
+figure.effect-jazz p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+figure.effect-jazz figcaption::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+figure.effect-jazz h2,
+figure.effect-jazz p {
+	opacity:1;
+	-webkit-transform: scale3d(0.8,0.8,1);
+	transform: scale3d(0.8,0.8,1);
+}
+figure.effect-jazz h2 {
+	  padding-top: 49%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	color:#00a996;
+	font-weight:600;
+}
+figure.effect-jazz p {
+	padding: 0.5em 2em;
+	text-transform: none;
+	font-size: 0.85em;
+	opacity: 0;
+}
+figure.effect-jazz:hover img {
+	opacity: 0.7;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+figure.effect-jazz:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+figure.effect-jazz:hover h2,
+figure.effect-jazz:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+/*风琴  开始*/
+.accordion
+{
+  position:relative;
+  overflow:hidden;
+}
+
+
+.accordion .panel
+{
+  background-color:#000;
+  background-repeat:no-repeat;
+  background-position:center center;
+  position:absolute;
+  overflow:hidden;
+}
+/*  风琴   结束*/
+/*SHOP TIME   结束*/
+/*WE ARE FAMILY   开始*/
+.news-section {
+  padding: 4em 0;
+}
+.news-right {
+  padding-top: 3em;
+}
+.col-bottom h4{
+    color: #00a996;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight:600;
+}
+.col-bottom p{
+    color: #555;
+  font-size: 1em;
+  line-height: 1.8em;
+  margin: 0.5em 0 0 0;
+}
+a.more{
+	text-decoration:none;
+	font-size: 1.3em;
+	color:#8CD0B4;
+	font-weight: 600;	
+	  display: inline-block;
+  margin-top: 0.7em;
+}
+.col-news-right {
+  padding: 0;
+  margin-top: 1em;
+}
+a.more:hover{
+	color:#000;
+}
+.col-bottom {
+	  padding: 0 0 1.1em 0;
+}
+/*WE ARE FAMILY   结束*/
+/*STUDYING  开始*/
+.newsletter{
+  background: url(../images/foot5.jpg)no-repeat;
+  min-height: 400px;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -webkit-background-size: cover;
+     padding-top: 2.5em;
+}
+h3.tittle.two {
+  color: #fff;
+}
+.newslatter {
+   margin-top: 3em;
+   margin-bottom: 13em;
+}
+/*STUDYING  结束*/
+/*----footer--*/
+.footer-section {
+  padding:1em 0;
+  background: rgba(55,55,55,0.4);
+}
+.footer-grid p,p.sub {
+  font-size: 0.95em;
+  line-height: 1.8em;
+  color:#A1A3AB;
+}
+.footer-grids{
+ padding:1em 0;
+}
+p.sub {
+ margin-top:1.3em;
+}
+ul.tag li  {
+  display: inline-block;
+  list-style: none;
+  margin: 15px 0px 6px -1px;
+}
+ul.tag li a {
+  padding: 0.8em 0.8em;
+  background: #232323;
+  color:#A1A3AB;
+  font-size: 0.9em;
+}
+ul.tag li a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+.flickr-grid a img {
+  width: 100%;
+}
+.flickr-grid {
+  float: left;
+  width: 32%;
+  margin: 0 0.1em .2em;
+}
+.footer-grids h4 {
+    font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;
+}
+.border2 {
+  border-bottom: 2px ridge rgba(72, 72, 76, 0.88);
+  padding: 0.3em 0 0.3em 0;
+  width: 52%;
+  margin-bottom: 0.5em;
+}
+ a i.square-3 {
+  width: 20px;
+  height: 20px;
+  background: url("../images/tw.png") no-repeat 0px 0px;
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+}
+.icon-text p {
+  color:#A1A3AB;
+  font-size:0.95em;
+  line-height: 1.6em;
+}
+.icon-3-square {
+  float: left;
+  width:10%;
+  margin-right: 2%;
+}
+.icon-text {
+  float: left;
+  width: 86%;
+}
+.icon-text h5 {
+    color: #00B29F;
+  font-size: 0.95em;
+  margin: 0.7em 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.icon-text a {
+  color: #D7D7D8;
+}
+/*----footer  结束--*/
+.copyright{
+  padding: 1em 1em;
+	background:#232323;
+}
+.copyright p{
+  text-align:center;
+  color: #fff;
+  font-size:1em;
+}
+.copyright p a{
+color:#00b29f;
+}
+/*--top-move--*/
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  overflow: hidden;
+  width: 40px;
+  height: 22px;
+  border: none;
+  text-indent: 100%;
+  background: url(../images/move-top.png) no-repeat 0px 0px;
+}
+/*--Starts-Responsive--*/
